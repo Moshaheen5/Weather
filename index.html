@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  py-5">
+        <div class="container-fluid">
+            <div class="container  d-flex  justify-content-between">
+                <a class="branding d-flex" href="./index.html">
+                    <img src="./images/logo@2x.png" alt="" class="logo me-2" width="64" height="38">
+                    <div class="logo-type">
+                        <h4 class="site-title">Weather</h4>
+                        <small class="site-description text-secondary">tagline goes here</small>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
+                        <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                         <a class="nav-link" href="#">News</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">Live cameras</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#">Photos</a>
+                        </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                      </li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="search">
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+            <form class="find">
+                <input type="text" class="loca" placeholder="Find your location..." id="search">
+                <input type="button" class="bot" value="Find" id="submit">
+            </form>
+        </div>
+    </div>
+    <div class="forcast">
+        <div class="container mx-auto">
+            <div class="row why d-flex">
+                <div class="col-md-12 col-lg-4">
+                    <div class="today-card w-100">
+                        <div class="forecast-header  d-flex justify-content-between " id="today">
+                            <div class="day">Sunday</div>
+                            <div class=" date">7April</div>
+                        </div>
+                        <div class="forecast-content" id="current">
+                            <div class="location fs-5 ">cairo</div>
+                                     <div class="num d-flex justify-content-between align-items-center">
+                                         <div class="degree text-white">26<sup>o</sup>C</div>
+                                         <div class="forecast-icon me-3">
+                                            <img src="./weather/64x64/day/sunny.png" alt="" width="90">
+                                         </div>	    
+                                     </div>
+                                     <div class="custom fs-5 ms-1">sunny</div>
+                        </div>
+                        <div class="spans pb-3">
+                            <span class="umbe" ><img src="./images/icon-umberella.png" alt="">20%</span>
+                            <span class="wind"><img src="./images/icon-wind.png" alt="">15km/h</span>
+                            <span class="compass"><img src="./images/icon-compass.png" alt="">East</span> 
+                        </div>
+
+                    </div>
+                </div>          
+                <div class="col-md-12 col-lg-4 mid">
+                    <div class="forc-card text-center w-100">
+                        <div class="forecast-header2">
+                            <div class="day">Monday</div>
+                        </div>
+                        <div class="forecast-content2 text-center">
+                            <div class="forecast-icon my-2">
+                                <img src="./images/sun.webp" alt="" width="56">
+                            </div>
+                            <div class="degree2 text-white">27.7<sup>o</sup>C</div>
+                            <small class=" mb-2">16.5<sup>o</sup></small>
+                            <div class="custom">Sunny</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="forc-card text-center">
+                        <div class="forecast-header3">
+                            <div class="day">Tuesday</div>
+                        </div>
+                        <div class="forecast-content3 text-center">
+                            <div class="forecast-icon my-2">
+                                <img src="./images/sun.webp" alt="" width="56">
+                            </div>
+                            <div class="degree2 text-white">26.3<sup>o</sup>C</div>
+                            <small class=" mb-2">15.4<sup>o</sup></small>
+                            <div class="custom">Sunny</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer ">
+        <div class="container fly">
+            <div class="row g-4">
+                <div class="col-md-8">
+                    <form action="#" class="subscribe-form position-relative mb-4">
+                        <input class="one" type="text" placeholder="Enter your email to subscribe..." data-listener-added_5fbd4870="true">
+                        <input class="two" type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-1">
+                    <div class="social-links ps-4 ms-5">
+                        <a href="#"><i class="fa-brands fa-facebook-f "></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="test my-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </div>
+    
+   	
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./JAVAS/script.js"></script>
+</body>
+</html>
